@@ -86,7 +86,6 @@ app.get("/data", (req, res) => {
             let end_elem = current_page * MAX_ROW_ON_PAGE;
 
             for (let i = start_elem; i < end_elem; i++) {
-                console.log(json_data[i]);
                 if (json_data[i] !== undefined) {
                     elem.push(json_data[i]);
                 } else {
