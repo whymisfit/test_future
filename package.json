@@ -1,0 +1,29 @@
+{
+  "name": "test_future",
+  "version": "1.0.0",
+  "description": "test task for the position frontend developer",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.3",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "nodemon": "^2.0.6",
+    "react-bootstrap": "^1.4.0",
+    "react-router-dom": "^5.2.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "proxy": "http://localhost:2010/",
+  "author": "Sergey Volchkov",
+  "license": "ISC"
+}
